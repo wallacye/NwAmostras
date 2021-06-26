@@ -7,18 +7,26 @@
 
 /* Menu */
 
-nav{
-    background: #543454;
-    height: 80px;
-    width: 100%;
+.fas{
+    color: black;
 }
 
-#logo{
-    color: #fff;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
+nav{
+    background: #fff;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 0 0.5em black;
+    position: fixed;
+}
+
+.logo{
+    background-color: Transparent;
+    border: none;
+    padding-left: 40px;
+}
+
+#imgLogo{
+    height: 80px;
 }
 
 nav ul{
@@ -34,17 +42,17 @@ nav ul li{
 }
 
 nav ul li button{
-    background: #543454;
-    color:#fff;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
+    background: #fff;
+    font-size: 19px;
+    border: none;
+    height: 78px;
+    padding: 7px 13px;  
     text-transform: uppercase;
 }
 
 .buttonMenu.active, .buttonMenu:hover{
-    background: #1d075f;
-    transition: .5s;
+    color: #0066FF;
+    border-bottom: 3px solid #0066FF;
 }
 
 .checkbtn{
@@ -61,14 +69,13 @@ nav ul li button{
     display: none;
 }
 
-@media (max-width:952px){
-    #logo{
-        font-size: 30px;
-        padding-left: 50px;
-    }
+.imgBtnMenuTemaEscuroClaro{
+    height: 100%;
+}
 
+@media (max-width:952px){
     nav ul li button{
-        font-size: 16px;
+        font-size: 15px;
     }
 }
 
@@ -78,11 +85,10 @@ nav ul li button{
     }
     nav ul{
         position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #1d075f;
+        width: 40%;
+        background: #E5E5E5;
         top: 80px;
-        left: -100%;
+        left: 200%;
         text-align: center;
         transition: all .5s;
     }
@@ -92,13 +98,14 @@ nav ul li button{
         line-height: 30px;
     }
     nav ul li button{
-        font-size: 20px;
+        font-size: 15px;
+        background: #E5E5E5;
     }
     .buttonMenu.active, .buttonMenu:hover{
         background: none;
-        color: #5434af;
+        color: #0066FF;
     }
     #check:checked ~ ul{
-        left: 0;
+        left: 60%;
     }
 }
