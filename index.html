@@ -12,6 +12,7 @@
         <script type="text/javascript" src="js/menuResponsivo.js" defer></script>
     </head>
     <body>
+        <!--Começo do menu-->
         <header>
             <nav>
 
@@ -33,5 +34,68 @@
                 </ul>
             </nav>
         </header>
+        <!--Fim do menu-->
+        
+        <!--Começo do carrossel-->
+        <div class="slider">
+            <div class="slides">
+            
+            <!--Inicio dos btn-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!--Fim btn-->
+
+            <!-- Inicio das imagens-->
+                <div class="slide first">
+                    <img src="https://image.freepik.com/fotos-gratis/medico-segurando-um-tubo-de-ensaio-de-sangue_53876-94745.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="https://image.freepik.com/fotos-gratis/close-up-mao-segurando-o-tubo-do-laboratorio_23-2148794441.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="https://image.freepik.com/fotos-gratis/medico-usando-mascara-facial-no-hospital_23-2148728373.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="https://image.freepik.com/fotos-gratis/pesquisador-embacado-segurando-objetos-de-vidro_23-2148794433.jpg  " alt="">
+                </div>
+            <!-- Fim das imagens-->   
+
+            <!--Inicio navegação automatica-->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+            <!--Fim navegação automatica-->
+
+            </div>
+            
+            <!--Inicio navegação manual-->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+            <!--Fim nevagação manual-->
+
+        </div>
+        <!--Fim do carrossel-->
+
+        <script type="text/javascript">
+        var counter = 1;
+        setInterval(funtion(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter>4){
+                counter = 1;
+            }
+
+        }, 5000); 
+        </script>
+       
     </body>
 </html>
