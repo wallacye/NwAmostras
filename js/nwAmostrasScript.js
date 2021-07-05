@@ -52,3 +52,8 @@ function carrossel(){
     }
     repeat();
   }
+
+  //Modo escuro
+document.querySelector('#btnModoClaroEscuro').addEventListener('click', () => {
+  document.body.classList.toggle('escuro')
+})
