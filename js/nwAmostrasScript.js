@@ -57,3 +57,9 @@ function carrossel(){
 document.querySelector('#btnModoClaroEscuro').addEventListener('click', () => {
   document.body.classList.toggle('escuro')
 })
+
+//Animação rolagem
+window.addEventListener("scroll", function(){
+  const header = document.querySelector("header");
+  header.classList.toggle('sticky', window.scrollY > 0);
+  });
