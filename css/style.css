@@ -18,6 +18,7 @@ body{
   --decoracaoTitulosCorFundo:#0066FF;
   --bordaPesquisaArtigos: 2px solid #4472C4;
   --iverterImg: invert(0%);
+  --fundoMenuResponsivo: #E5E5E5;
   background-color: var(--fundo);
 }
 
@@ -33,6 +34,7 @@ body.escuro{
   --decoracaoTitulosCorFundo:#47CF0C;
   --iverterImg: invert(100%);
   --bordaPesquisaArtigos: 2px solid #47CF0C;
+  --fundoMenuResponsivo: #2c2a2a;
 }
 
 /* Menu */
@@ -53,7 +55,7 @@ nav{
 .logo{
     background-color: Transparent;
     border: none;
-    padding-left: 40px;
+    padding-left: 30px;
 }
 
 .imgLogo{
@@ -138,7 +140,7 @@ nav ul li button{
     nav ul{
         position: fixed;
         width: 40%;
-        background: #E5E5E5;
+        background: var(--fundoMenuResponsivo);
         top: 80px;
         left: 200%;
         text-align: center;
@@ -152,7 +154,7 @@ nav ul li button{
     }
     nav ul li button{
         font-size: 15px;
-        background: #E5E5E5;
+        background: transparent;
     }
     .buttonMenu.active, .buttonMenu:hover{
         background: none;
@@ -399,6 +401,10 @@ nav ul li button{
     float: left;
   }
 
+  .mudancaPosicaoImgUmIndex{
+    display: none;
+  }
+
   @media (max-width: 858px){
     .imgFuncionalidades{
       float: left;
@@ -418,6 +424,14 @@ nav ul li button{
       margin: 0% 10% 0% 10%;
       transform: translatey(0%);
       float: left;
+    }
+
+    .mudancaPosicaoImgUmIndex{
+      display: block;
+    }
+
+    .mudancaPosicaoImgDoisIndex{
+      display: none;
     }
 }
 
@@ -581,3 +595,155 @@ nav ul li button{
     color: var(--corPalavrasVerdeAzul);
   }
   
+  /*Tela login*/
+
+  .containerTelaLogin{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+  }
+
+  .containerInfoLogin{
+    margin-top: 80px;
+    width: 448px;
+    height: 468px;
+    margin: 10% 0% 3% 0%;
+    border-radius: 20px;
+    box-shadow: 0 0 1em black;
+  }
+
+  .containerTitulosLogin{
+    width: 100%;
+    height: auto;
+  }
+
+  .buttonLoginCadastro{
+    height: 45px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 35px;
+    margin-top: 30px;
+    border: none;
+    background-color: transparent;
+    color: var(--detalhes);
+  }
+
+  .bntLogin{
+    border-bottom: var(--bordaMenu);
+  }
+
+  .containerEmailSenha{
+    width: 100%;
+    height: auto;
+  }
+
+  .containerLblsLoginCad{
+    width: 80%;
+    margin-left: 35px;
+    margin-top: 30px;
+  }
+
+  .lblsLoginCad{
+    font-size: 20px;
+  }
+
+  .txtLoginCad{
+    border: none;
+    width: 80%;
+    font-size: 20px;
+    color: #767171;
+    border-bottom: 1px solid #767171;
+    margin-left: 35px;
+    margin-top: 20px;
+    background-color: transparent;
+  }
+
+  .containerEsqueceuSenha{
+    width: 80%;
+    margin-left: 35px;
+    margin-top: 35px;
+  }
+
+  .containerBtnLogar{
+    width: 80%;
+    margin: 40px 10% 0% 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+  }
+
+  .bntLogar{
+    width: 188px;
+    height: 47px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--decoracaoTitulosCorFundo);
+    color: var(--fundo);
+    font-size: 20px;
+  }
+
+  @media (max-width: 858px){
+    
+  .containerTelaLogin{
+    float: left;
+    height: auto;
+    margin: 10% 0%;
+  }
+
+  .containerInfoLogin{
+    width: 100%;
+    box-shadow: none;
+  }
+}
+
+/*Tela cadastro*/
+
+.containerTelaCad{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center
+}
+
+.containerInfoCad{
+  margin-top: 100px;
+  width: 448px;
+  height: 740px;
+  border-radius: 20px;
+  box-shadow: 0 0 1em black;
+}
+
+.bntCad{
+  border-bottom: var(--bordaMenu);
+}
+
+.containerCamposObrigatorios{
+  width: 80%;
+  margin-left: 35px;
+  margin-top: 35px;
+}
+
+.lblCamposObrigatorios{
+  color: #FF0000;
+  font-size: 16px;
+}
+
+@media (max-width: 858px){
+    
+  .containerTelaCad{
+    float: left;
+    height: auto;
+    margin: 10% 0%;
+  }
+
+  .containerInfoCad{
+    width: 100%;
+    box-shadow: none;
+  }
+}

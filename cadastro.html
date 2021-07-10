@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Login</title>
+        <title>Cadastre-se</title>
         <link rel="icon" type="img/png" href="./img/logoNwAmostras.png" />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,24 +40,36 @@
         </header>
 
         <section>
-            <div class="containerTelaLogin">
-                <div class="containerInfoLogin">
-                
+            <div class="containerTelaCad">
+                <div class="containerInfoCad">
                     <div class="containerTitulosLogin">
-                        <button class="buttonLoginCadastro bntLogin" onclick="location.href='login.html'">Login</button>
-                        <button class="buttonLoginCadastro" onclick="location.href='cadastro.html'">Cadastre-se</button>
+                        <button class="buttonLoginCadastro" onclick="location.href='login.html'">Login</button>
+                        <button class="buttonLoginCadastro bntCad" onclick="location.href='cadastro.html'">Cadastre-se</button>
                     </div>
                     <form>
                     <div class="containerEmailSenha">
-                        <div class="containerLblsLoginCad"><label class="palavrasAzul lblsLoginCad">E-mail</label></div>
+                        <div class="containerLblsLoginCad"><label class="palavrasAzul lblsLoginCad">Nome*</label></div>
+                        <input type="text" class="txtLoginCad" placeholder="Digite seu nome"/>
+                    </div>
+                    <div class="containerEmailSenha">
+                        <div class="containerLblsLoginCad"><label class="palavrasAzul lblsLoginCad">CPF*</label></div>
+                        <input type="text" class="txtLoginCad" placeholder="Digite seu CPF"/>
+                    </div>
+                    <div class="containerEmailSenha">
+                        <div class="containerLblsLoginCad"><label class="palavrasAzul lblsLoginCad">E-mail*</label></div>
                         <input type="text" class="txtLoginCad" placeholder="Digite seu e-mail"/>
                     </div>
                     <div class="containerEmailSenha">
-                        <div class="containerLblsLoginCad"><label class="palavrasAzul lblsLoginCad">Senha</label></div>
+                        <div class="containerLblsLoginCad"><label class="palavrasAzul lblsLoginCad">Senha*</label></div>
                         <input type="text" class="txtLoginCad" placeholder="Digite sua senha"/>
                     </div>
-                    <div class="containerEsqueceuSenha">
-                        <a class="palavrasAzul lblsLoginCad" href="">Esqueceu sua senha?</a>
+                    <div class="containerEmailSenha">
+                        <div class="containerLblsLoginCad"><label class="palavrasAzul lblsLoginCad">Confirmar Senha*</label></div>
+                        <input type="text" class="txtLoginCad" placeholder="Confirme sua senha"/>
+                    </div>
+
+                    <div class="containerCamposObrigatorios">
+                        <a class="lblCamposObrigatorios" >*Campos obrigatórios</a>
                     </div>
                     <div class="containerBtnLogar">
                         <input class="bntLogar" type="submit" value="Logar">
