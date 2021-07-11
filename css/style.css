@@ -612,7 +612,7 @@ nav ul li button{
     height: 468px;
     margin: 10% 0% 3% 0%;
     border-radius: 20px;
-    box-shadow: 0 0 1em black;
+    box-shadow: 0 0 0.5em black;
   }
 
   .containerTitulosLogin{
@@ -712,11 +712,11 @@ nav ul li button{
 }
 
 .containerInfoCad{
-  margin-top: 100px;
+  margin-top: 130px;
   width: 448px;
   height: 740px;
   border-radius: 20px;
-  box-shadow: 0 0 1em black;
+  box-shadow: 0 0 0.5em black;
 }
 
 .bntCad{
@@ -743,7 +743,55 @@ nav ul li button{
   }
 
   .containerInfoCad{
+    margin-top: 30px;
+  }
+
+  .containerInfoCad{
     width: 100%;
     box-shadow: none;
   }
+}
+
+/*Tela Artigos*/
+
+.containerArtigo{
+  float: left;
+  margin-top: 100px;
+  width: 100%;
+  text-align: center;
+  height: auto;
+}
+
+.containerPrincipaisArtigos{
+  width: 90%;
+  height: auto;
+  margin: 4% 5% 0% 5%;
+  float: left;
+}
+
+.principaisArtigos{
+  width: 100%;
+  float: left;
+  margin-bottom: 3%;
+}
+
+.containerResumoArtigo{
+  width: 98%;
+  margin-right: 2%;
+  text-align: left;
+}
+
+.containerBtnVerMais{
+  float: left;
+  width: 100%;
+}
+
+.bntVerMais{
+  width: 188px;
+  height: 47px;
+  border-radius: 30px;
+  border:none;
+  font-size: 20px;
+  background-color: var(--decoracaoTitulosCorFundo);
+  color: var(--fundo);
 }
